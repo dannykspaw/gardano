@@ -1,0 +1,260 @@
+       mindate     maxdate                                                                                                     name  datacoverage    id
+0    1991-06-05  2023-05-24                                                                                                Base Data        0.9500   ALL
+1    1982-01-01  2023-05-25                                                                                       Average wind speed        1.0000  AWND
+2    1763-01-01  2023-04-01                                                                       Cooling Degree Days Season to Date        1.0000  CDSD
+3    1763-01-01  2023-04-01                                                                                      Cooling Degree Days        1.0000  CLDD
+4    2011-03-08  2023-05-26           Digital Accumulation Array(One Hour Precipitation total (256 levels) with Dual Pol. algorithm)        0.9500   DAA
+5    1832-05-11  2023-05-26                                       Number of days included in the multiday precipitation total (MDPR)        1.0000  DAPR
+6    1863-05-04  2023-05-20                                       Number of days included in the multiday minimum temperature (MDTN)        1.0000  DATN
+7    1863-05-04  2023-05-19                                       Number of days included in the multiday maximum temperature (MDTX)        1.0000  DATX
+8    1994-05-20  2023-05-26                                                                         Digital Hybrid Scan Reflectivity        0.9500   DHR
+9    2011-03-08  2023-05-26                                                              One Hour Precipitation Difference = DAA-N1P        0.9500   DOD
+10   1781-01-01  2023-04-01                                   Number of days with greater than or equal to 0.1 inch of precipitation        1.0000  DP01
+11   1781-01-01  2023-04-01                                   Number of days with greater than or equal to 1.0 inch of precipitation        1.0000  DP10
+12   1994-06-17  2023-05-26                                                                              Digital Precipitation Array        0.9500   DPA
+13   2011-03-08  2023-05-26                                                                         Instantaneous Precipitation Rate        0.9500   DPR
+14   2011-03-08  2023-05-26                                                           Storm Total Precipitation Difference = DTA-DSP        0.9500   DSD
+15   1863-12-01  2023-04-01                                             Number days with snow depth > 1 inch(25.4mm) for the period.        1.0000  DSND
+16   1840-05-01  2023-04-01                                                                    Number days with snow depth > 1 inch.        1.0000  DSNW
+17   1994-06-17  2023-05-26                                                                        Digital Storm Total Precipitation        0.9500   DSP
+18   1763-01-01  2023-04-01                                         Number days with minimum temperature less than or equal to 0.0 F        1.0000  DT00
+19   1763-01-01  2023-04-01                                        Number days with minimum temperature less than or equal to 32.0 F        1.0000  DT32
+20   2011-03-08  2023-05-26  Digital Storm Total Accumulation(Storm Total Precipitation total (256 levels) with Dual Pol. algorithm)        0.9500   DTA
+21   1994-05-20  2023-05-26                                                                       Digital Vertical Integrated Liquid        0.9500   DVL
+22   1832-05-11  2023-05-20               Number of days with non-zero precipitation included in multiday precipitation total (MDPR)        1.0000  DWPR
+23   1763-01-01  2023-04-01                                                             Number days with maximum temperature < 32 F.        1.0000  DX32
+24   1763-01-01  2023-04-01                                                      Number days with maximum temperature > 70 F (21.1C)        1.0000  DX70
+25   1763-01-01  2023-04-01                                                      Number days with maximum temperature > 90 F (32.2C)        1.0000  DX90
+26   1763-01-01  2023-04-01                                                 Day Extreme minimum temperature occurred for the period.        1.0000  DYNT
+27   1863-12-01  2023-04-01                                        Day the extreme maximum daily Snow Depth for the period occurred.        1.0000  DYSD
+28   1840-05-01  2023-04-01                                          Day the extreme maximum daily snowfall for the period occurred.        1.0000  DYSN
+29   1781-01-01  2023-04-01                                                  Day Extreme maximum daily precipitation for the period.        1.0000  DYXP
+30   1763-01-01  2023-04-01                                                Date Extreme maximum temperature occurred for the period.        1.0000  DYXT
+31   1994-05-20  2023-05-26                                                                                       Enhanced Echo Tops        0.9500   EET
+32   1763-01-01  2023-04-01                                                              Extreme minimum temperature for the period.        1.0000  EMNT
+33   1863-12-01  2023-04-01                                                               Extreme maximum snow depth for the period.        1.0000  EMSD
+34   1840-05-01  2023-04-01                                                                 Extreme maximum snowfall for the period.        1.0000  EMSN
+35   1781-01-01  2023-04-01                                                            Extreme maximum precipitation for the period.        1.0000  EMXP
+36   1763-01-01  2023-04-01                                                              Extreme maximum temperature for the period.        1.0000  EMXT
+37   1893-01-09  2023-04-30                                                                Evaporation of water from evaporation pan        1.0000  EVAP
+38   1994-05-20  2023-05-26                                                                                        Free Text Message        0.9500   FTM
+39   1994-05-20  2023-05-26                                                                                   General Status Message        0.9500   GSM
+40   1763-07-01  2023-04-01                                                                       Heating Degree Days Season to Date        1.0000  HDSD
+41   2011-03-08  2023-05-26                                                                        Hybrid Hydrometeor Classification        0.9500   HHC
+42   1982-01-01  2023-04-01                                               Highest minimum soil temperature for the month (degrees F)        1.0000  HN01
+43   1982-01-01  2023-04-01                                               Highest minimum soil temperature for the month (degrees F)        1.0000  HN02
+44   1982-01-01  2023-03-01                                               Highest minimum soil temperature for the month (degrees F)        1.0000  HN03
+45   1982-01-01  2023-03-01                                               Highest minimum soil temperature for the month (degrees F)        1.0000  HN04
+46   1982-01-01  2023-03-01                                               Highest minimum soil temperature for the month (degrees F)        0.9997  HN05
+47   1982-01-01  2023-03-01                                               Highest minimum soil temperature for the month (degrees F)        0.9997  HN06
+48   1982-06-01  2023-03-01                                               Highest minimum soil temperature for the month (degrees F)        0.9997  HN07
+49   1982-06-01  2023-03-01                                               Highest minimum soil temperature for the month (degrees F)        0.9700  HN08
+50   1781-01-04  2023-05-26                                                                                            Precipitation           NaN  HPCP
+51   1840-10-24  2023-05-24                                                                                         Highest snowfall           NaN  HSNW
+52   1763-01-01  2023-04-01                                                                                      Heating degree days        1.0000  HTDD
+53   1763-01-01  2023-05-26                                                                              Highest minimum temperature           NaN  HTMN
+54   1763-01-01  2023-05-25                                                                              Highest maximum temperature           NaN  HTMX
+55   1982-01-01  2023-04-01                                               Highest maximum soil temperature for the month (degrees F)        1.0000  HX01
+56   1982-01-01  2023-04-01                                               Highest maximum soil temperature for the month (degrees F)        1.0000  HX02
+57   1982-01-01  2023-03-01                                               Highest maximum soil temperature for the month (degrees F)        1.0000  HX03
+58   1982-01-01  2023-03-01                                               Highest maximum soil temperature for the month (degrees F)        1.0000  HX04
+59   1982-01-01  2023-03-01                                               Highest maximum soil temperature for the month (degrees F)        0.9997  HX05
+60   1982-01-01  2023-02-01                                               Highest maximum soil temperature for the month (degrees F)        0.9997  HX06
+61   1982-06-01  2023-01-01                                               Highest maximum soil temperature for the month (degrees F)        0.9997  HX07
+62   1982-01-01  2023-04-01                                                Lowest minimum soil temperature for the month (degrees F)        1.0000  LN01
+63   1982-01-01  2023-04-01                                                Lowest minimum soil temperature for the month (degrees F)        1.0000  LN02
+64   1982-01-01  2023-03-01                                                Lowest minimum soil temperature for the month (degrees F)        1.0000  LN03
+65   1982-01-01  2023-03-01                                                Lowest minimum soil temperature for the month (degrees F)        1.0000  LN04
+66   1982-01-01  2023-03-01                                                Lowest minimum soil temperature for the month (degrees F)        0.9997  LN05
+67   1982-01-01  2023-03-01                                                Lowest minimum soil temperature for the month (degrees F)        0.9997  LN06
+68   1982-06-01  2023-03-01                                                Lowest minimum soil temperature for the month (degrees F)        0.9997  LN07
+69   1982-06-01  2023-03-01                                                Lowest minimum soil temperature for the month (degrees F)        0.9700  LN08
+70   1763-01-01  2023-05-26                                                                               Lowest minimum temperature           NaN  LTMN
+71   1763-01-01  2023-05-26                                                                               Lowest maximum temperature           NaN  LTMX
+72   1982-01-01  2023-04-01                                                Lowest maximum soil temperature for the month (degrees F)        1.0000  LX01
+73   1982-01-01  2023-04-01                                                Lowest maximum soil temperature for the month (degrees F)        1.0000  LX02
+74   1982-01-01  2023-03-01                                                Lowest maximum soil temperature for the month (degrees F)        1.0000  LX03
+75   1982-01-01  2023-03-01                                                Lowest maximum soil temperature for the month (degrees F)        1.0000  LX04
+76   1982-01-01  2023-03-01                                                Lowest maximum soil temperature for the month (degrees F)        0.9997  LX05
+77   1982-01-01  2023-02-01                                                Lowest maximum soil temperature for the month (degrees F)        0.9997  LX06
+78   1982-06-01  2023-01-01                                                Lowest maximum soil temperature for the month (degrees F)        0.9997  LX07
+79   1832-05-11  2023-05-26                                      Multiday precipitation total (use with DAPR and DWPR, if available)        1.0000  MDPR
+80   1863-05-04  2023-05-20                                                             Multiday minimum temperature (use with DATN)        1.0000  MDTN
+81   1863-05-04  2023-05-19                                                             Multiday maximum temperature (use with DATX)        1.0000  MDTX
+82   1982-01-01  2023-04-01                                                        Monthly mean minimum soil temperature (degrees F)        1.0000  MN01
+83   1982-01-01  2023-04-01                                                        Monthly mean minimum soil temperature (degrees F)        1.0000  MN02
+84   1982-01-01  2023-03-01                                                        Monthly mean minimum soil temperature (degrees F)        1.0000  MN03
+85   1982-01-01  2023-03-01                                                        Monthly mean minimum soil temperature (degrees F)        1.0000  MN04
+86   1982-01-01  2023-03-01                                                        Monthly mean minimum soil temperature (degrees F)        0.9997  MN05
+87   1982-01-01  2023-03-01                                                        Monthly mean minimum soil temperature (degrees F)        0.9997  MN06
+88   1982-06-01  2023-03-01                                                        Monthly mean minimum soil temperature (degrees F)        0.9997  MN07
+89   1982-06-01  2023-03-01                                                        Monthly mean minimum soil temperature (degrees F)        0.9700  MN08
+90   1950-11-28  2023-04-30                                                 Daily minimum temperature of water in an evaporation pan        1.0000  MNPN
+91   1982-01-01  2023-04-01                                                        Monthly mean maximum soil temperature (degrees F)        1.0000  MX01
+92   1982-01-01  2023-04-01                                                        Monthly mean maximum soil temperature (degrees F)        1.0000  MX02
+93   1982-01-01  2023-03-01                                                        Monthly mean maximum soil temperature (degrees F)        1.0000  MX03
+94   1982-01-01  2023-03-01                                                        Monthly mean maximum soil temperature (degrees F)        1.0000  MX04
+95   1982-01-01  2023-03-01                                                        Monthly mean maximum soil temperature (degrees F)        0.9997  MX05
+96   1982-01-01  2023-02-01                                                        Monthly mean maximum soil temperature (degrees F)        0.9997  MX06
+97   1982-06-01  2023-01-01                                                        Monthly mean maximum soil temperature (degrees F)        0.9997  MX07
+98   1921-12-09  2023-04-30                                                 Daily maximum temperature of water in an evaporation pan        1.0000  MXPN
+99   2011-03-08  2023-05-26                                                   Correlation Coefficient (approx. elev. angle: 0.5 deg)        0.9500   N0C
+100  2011-03-08  2023-05-26                                                                          Power Removed Control (0.5 Deg)        0.9500   N0F
+101  2011-03-08  2023-05-26                                                      Hydrometeor Classification (approx. elev.: 0.5 deg)        0.9500   N0H
+102  2011-03-08  2023-05-26                                                     Specific Differential Phase (approx. elev.: 0.5 deg)        0.9500   N0K
+103  1994-05-20  2023-05-26                                                 Digital Base Reflectivity (approx. elev. angle: 0.5 deg)        0.9500   N0Q
+104  1994-05-20  2023-05-26                                                         Base Reflectivity (approx. elev. angle: 0.5 deg)        0.9500   N0R
+105  1994-05-20  2023-05-26                                                   Storm Relative Velocity (approx. elev. angle: 0.5 deg)        0.9500   N0S
+106  1994-05-20  2023-05-26                                                             Base Velocity (approx. elev. angle: 0.5 deg)        0.9500   N0V
+107  1994-05-20  2023-05-26                                                                                            Base Velocity        0.9500   N0W
+108  2011-03-08  2023-05-26                                                 Differential Reflectivity (approx. elev. angle: 0.5 deg)        0.9500   N0X
+109  1994-05-20  2023-05-26                                                                    Long Range Base Reflectivity (460 km.        0.9500   N0Z
+110  2011-03-08  2023-05-26                                                   Correlation Coefficient (approx. elev. angle: 1.5 deg)        0.9500   N1C
+111  2011-03-08  2023-05-26                                                                               Power Removed Control (1.3        0.9500   N1F
+112  2011-03-08  2023-05-26                                                      Hydrometeor Classification (approx. elev.: 1.5 deg)        0.9500   N1H
+113  2011-03-08  2023-05-26                                                     Specific Differential Phase (approx. elev.: 1.5 deg)        0.9500   N1K
+114  1994-06-17  2023-05-26                                                                             One Hour Precipitation Total        0.9500   N1P
+115  1994-05-20  2023-05-26                                                 Digital Base Reflectivity (approx. elev. angle: 1.5 deg)        0.9500   N1Q
+116  1994-05-20  2023-05-26                                                         Base Reflectivity (approx. elev. angle: 1.5 deg)        0.9500   N1R
+117  1994-05-20  2023-05-26                                                   Storm Relative Velocity (approx. elev. angle: 1.5 deg)        0.9500   N1S
+118  1994-05-20  2023-05-26                                                             Base Velocity (approx. elev. angle: 1.5 deg)        0.9500   N1V
+119  2011-03-08  2023-05-26                                                 Differential Reflectivity (approx. elev. angle: 1.5 deg)        0.9500   N1X
+120  2011-03-08  2023-05-26                                                   Correlation Coefficient (approx. elev. angle: 2.4 deg)        0.9500   N2C
+121  2011-03-08  2023-05-26                                                      Hydrometeor Classification (approx. elev.: 2.4 deg)        0.9500   N2H
+122  2011-03-08  2023-05-26                                                     Specific Differential Phase (approx. elev.: 2.4 deg)        0.9500   N2K
+123  1994-05-20  2023-05-26                                                 Digital Base Reflectivity (approx. elev. angle: 2.4 deg)        0.9500   N2Q
+124  1994-05-20  2023-05-26                                                         Base Reflectivity (approx. elev. angle: 2.4 deg)        0.9500   N2R
+125  1994-05-20  2023-05-26                                                   Storm Relative Velocity (approx. elev. angle: 2.4 deg)        0.9500   N2S
+126  1994-05-20  2023-05-26                                                             Base Velocity (approx. elev. angle: 2.4 deg)        0.9500   N2V
+127  2011-03-08  2023-05-26                                                 Differential Reflectivity (approx. elev. angle: 2.4 deg)        0.9500   N2X
+128  2011-03-08  2023-05-26                                                   Correlation Coefficient (approx. elev. angle: 3.4 deg)        0.9500   N3C
+129  2011-03-08  2023-05-26                                                                               Power Removed Control (2.4        0.9500   N3F
+130  2011-03-08  2023-05-26                                                      Hydrometeor Classification (approx. elev.: 3.4 deg)        0.9500   N3H
+131  2011-03-08  2023-05-26                                                     Specific Differential Phase (approx. elev.: 3.4 deg)        0.9500   N3K
+132  1994-06-17  2023-05-26                                                                           Three Hour Precipitation Total        0.9500   N3P
+133  1994-05-20  2023-05-26                                                 Digital Base Reflectivity (approx. elev. angle: 3.4 deg)        0.9500   N3Q
+134  1994-05-20  2023-05-26                                                         Base Reflectivity (approx. elev. angle: 3.4 deg)        0.9500   N3R
+135  1994-05-20  2023-05-26                                                   Storm Relative Velocity (approx. elev. angle: 3.4 deg)        0.9500   N3S
+136  1994-05-20  2023-05-26                                                             Base Velocity (approx. elev. angle: 3.4 deg)        0.9500   N3V
+137  2011-03-08  2023-05-26                                                 Differential Reflectivity (approx. elev. angle: 3.4 deg)        0.9500   N3X
+138  2011-03-08  2023-05-26                                                                               Power Removed Control (3.1        0.9500   N4F
+139  2011-03-08  2023-05-26                                                   Correlation Coefficient (approx. elev. angle: 0.8 deg)        0.9500   NAC
+140  2011-03-08  2023-05-26                                                                          Power Removed Control (0.9 Deg)        0.9500   NAF
+141  2011-03-08  2023-05-26                                                      Hydrometeor Classification (approx. elev.: 0.8 deg)        0.9500   NAH
+142  2011-03-08  2023-05-26                                                     Specific Differential Phase (approx. elev.: 0.8 deg)        0.9500   NAK
+143  1994-05-20  2023-05-26                                                 Digital Base Reflectivity (approx. elev. angle: 0.8 deg)        0.9500   NAQ
+144  2011-03-08  2023-05-26                                                 Differential Reflectivity (approx. elev. angle: 0.9 deg)        0.9500   NAX
+145  2011-03-08  2023-05-26                                                   Correlation Coefficient (approx. elev. angle: 1.8 deg)        0.9500   NBC
+146  2011-03-08  2023-05-26                                                                          Power Removed Control (1.8 Deg)        0.9500   NBF
+147  2011-03-08  2023-05-26                                                      Hydrometeor Classification (approx. elev.: 1.8 deg)        0.9500   NBH
+148  2011-03-08  2023-05-26                                                     Specific Differential Phase (approx. elev.: 1.8 deg)        0.9500   NBK
+149  1994-05-20  2023-05-26                                                 Digital Base Reflectivity (approx. elev. angle: 1.8 deg)        0.9500   NBQ
+150  2011-03-08  2023-05-26                                                 Differential Reflectivity (approx. elev. angle: 1.8 deg)        0.9500   NBX
+151  1994-05-20  2023-05-26                                                                     Composite Reflectivity (4x4 km. grid        0.9500   NCR
+152  1994-05-20  2023-05-26                                                                     Composite Reflectivity (2x2 km. grid        0.9500   NCZ
+153  1994-05-20  2023-05-26                                                                                                Echo Tops        0.9500   NET
+154  1994-06-17  2023-05-26                                                                                               Hail Index        0.9500   NHI
+155  1994-05-20  2023-05-26                                                                        High Layer Composite Reflectivity        0.9500   NHL
+156  1994-05-20  2023-05-26                                                                         Low Layer Composite Reflectivity        0.9500   NLL
+157  1994-06-17  2023-05-26                                                                  Digital Mesocyclone Detection Algorithm        0.9500   NMD
+158  1994-06-17  2023-05-26                                                                                              Mesocyclone        0.9500   NME
+159  1994-05-20  2023-05-26                                                                         Mid Layer Composite Reflectivity        0.9500   NML
+160  1994-06-17  2023-05-26                                                                     Hybrid Scan Rain Rate Classification        0.9500   NRR
+161  1994-05-20  2023-05-26                                                                       Base Spectrum Width (60 km. range)        0.9500   NSP
+162  1994-06-17  2023-05-26                                                                                          Storm Structure        0.9500   NSS
+163  1994-06-17  2023-05-26                                                                               Storm Tracking Information        0.9500   NST
+164  1994-05-20  2023-05-26                                                                      Base Spectrum Width (230 km. range)        0.9500   NSW
+165  1994-06-17  2023-05-26                                                                                Storm Total Precipitation        0.9500   NTP
+166  1994-06-17  2023-05-26                                                                                Tornadic Vortex Signature        0.9500   NTV
+167  1994-05-20  2023-05-26                                                                               Vertical Integrated Liquid        0.9500   NVL
+168  1994-05-20  2023-05-26                                          Correlation Coefficient (256 Level / 300 KM) (-0.5 to -0.1 Deg)        0.9500   NXC
+169  2011-03-08  2023-05-26                                                                 Power Removed Control (-0.5 to -0.1 Deg)        0.9500   NXF
+170  1994-05-20  2023-05-26                                        Hydrometeor Classification (16 Level / 300 KM) (-0.5 to -0.1 Deg)        0.9500   NXH
+171  1994-05-20  2023-05-26                                       Specific Differential Phase (256 Level / 300 KM) (-0.5 to-0.1 Deg)        0.9500   NXK
+172  1994-05-20  2023-05-26                                                                Melting Layer (300 KM) (-0.5 to -0.1 Deg)        0.9500   NXM
+173  1994-05-20  2023-05-26                                    Short Range Base Reflectivity (256 Level / 230 KM) (-0.5 to -0.1 Deg)        0.9500   NXQ
+174  1994-05-20  2023-05-26                                                    Base Velocity (256 Level / 230 KM) (-0.5 to -0.1 Deg)        0.9500   NXU
+175  1994-05-20  2023-05-26                                        Differential Reflectivity (256 Level / 300 KM) (-0.5 to -0.1 Deg)        0.9500   NXX
+176  1994-05-20  2023-05-26                                            Correlation Coefficient (256 Level / 300 KM) (0.0 to 0.2 Deg)        0.9500   NYC
+177  2011-03-08  2023-05-26                                                                   Power Removed Control (0.0 to 0.2 Deg)        0.9500   NYF
+178  1994-05-20  2023-05-26                                          Hydrometeor Classification (16 Level / 300 KM) (0.0 to 0.2 Deg)        0.9500   NYH
+179  1994-05-20  2023-05-26                                        Specific Differential Phase (256 Level / 300 KM) (0.0 to 0.2 Deg)        0.9500   NYK
+180  1994-05-20  2023-05-26                                                                  Melting Layer (300 KM) (0.0 to 0.2 Deg)        0.9500   NYM
+181  1994-05-20  2023-05-26                                      Short Range Base Reflectivity (256 Level / 230 KM) (0.0 to 0.2 Deg)        0.9500   NYQ
+182  1994-05-20  2023-05-26                                                      Base Velocity (256 Level / 230 KM) (0.0 to 0.2 Deg)        0.9500   NYU
+183  1994-05-20  2023-05-26                                          Differential Reflectivity (256 Level / 300 KM) (0.0 to 0.2 Deg)        0.9500   NYX
+184  1994-05-20  2023-05-26                                            Correlation Coefficient (256 Level / 300 KM) (0.3 to 0.4 Deg)        0.9500   NZC
+185  2011-03-08  2023-05-26                                                                   Power Removed Control (0.3 to 0.4 Deg)        0.9500   NZF
+186  1994-05-20  2023-05-26                                          Hydrometeor Classification (16 Level / 300 KM) (0.3 to 0.4 Deg)        0.9500   NZH
+187  1994-05-20  2023-05-26                                        Specific Differential Phase (256 Level / 300 KM) (0.3 to 0.4 Deg)        0.9500   NZK
+188  1994-05-20  2023-05-26                                                                  Melting Layer (300 KM) (0.3 to 0.4 Deg)        0.9500   NZM
+189  1994-05-20  2023-05-26                                      Short Range Base Reflectivity (256 Level / 230 KM) (0.3 to 0.4 Deg)        0.9500   NZQ
+190  1994-05-20  2023-05-26                                                      Base Velocity (256 Level / 230 KM) (0.3 to 0.4 Deg)        0.9500   NZU
+191  1994-05-20  2023-05-26                                          Differential Reflectivity (256 Level / 300 KM) (0.3 to 0.4 Deg)        0.9500   NZX
+192  2011-03-08  2023-05-26                 One Hour Accumulation(One Hour Precipitation total (16 levels) with Dual Pol. algorithm)        0.9500   OHA
+193  1948-01-01  2023-05-24                                                                                           Peak gust time        1.0000  PGTM
+194  1781-01-01  2023-05-26                                                                                            Precipitation        1.0000  PRCP
+195  1965-01-01  2023-03-31                                                        Daily percent of possible sunshine for the period        1.0000  PSUN
+196  2011-03-08  2023-05-26           Storm Total Accumulation(Storm Total Precipitation total (16 levels) with Dual Pol. algorithm)        0.9500   PTA
+197  1994-05-20  2023-05-26                                                                                      Radar Coded Message        0.9500   RCM
+198  1994-05-20  2023-05-26                                                                                 WSR-88D Radar Status Log        0.9500   RSL
+199  1982-01-01  2023-04-30                                            Minimum soil temperature with bare ground cover at 5 cm depth        1.0000  SN31
+200  1982-01-01  2023-04-30                                           Minimum soil temperature with bare ground cover at 10 cm depth        1.0000  SN32
+201  1982-01-01  2023-04-30                                           Minimum soil temperature with bare ground cover at 20 cm depth        1.0000  SN33
+202  2005-01-01  2023-03-31                                          Minimum soil temperature with bare ground cover at 100 cm depth        1.0000  SN35
+203  2006-03-01  2023-03-31                                          Minimum soil temperature with bare ground cover at 150 cm depth        1.0000  SN36
+204  1982-01-01  2023-03-31                                                    Minimum soil temperature with sod cover at 5 cm depth        1.0000  SN51
+205  1982-01-01  2023-04-30                                                   Minimum soil temperature with sod cover at 10 cm depth        1.0000  SN52
+206  1982-01-01  2023-04-30                                                   Minimum soil temperature with sod cover at 20 cm depth        1.0000  SN53
+207  2002-03-01  2023-03-31                                                  Minimum soil temperature with sod cover at 100 cm depth        1.0000  SN55
+208  2012-09-27  2023-03-31                                                  Minimum soil temperature with sod cover at 150 cm depth        1.0000  SN56
+209  1840-05-01  2023-05-26                                                                                                 Snowfall        1.0000  SNOW
+210  1857-01-18  2023-05-26                                                                                               Snow depth        1.0000  SNWD
+211  1994-05-20  2023-05-26                                                                          Supplemental Precipitation Data        0.9500   SPD
+212  1982-01-01  2023-04-30                                            Maximum soil temperature with bare ground cover at 5 cm depth        1.0000  SX31
+213  1982-01-01  2023-04-30                                           Maximum soil temperature with bare ground cover at 10 cm depth        1.0000  SX32
+214  1982-01-01  2023-04-30                                           Maximum soil temperature with bare ground cover at 20 cm depth        1.0000  SX33
+215  2005-01-01  2023-04-30                                          Maximum soil temperature with bare ground cover at 100 cm depth        0.9882  SX35
+216  2011-01-01  2023-04-30                                          Maximum soil temperature with bare ground cover at 150 cm depth        1.0000  SX36
+217  1982-01-01  2023-03-31                                                    Maximum soil temperature with sod cover at 5 cm depth        1.0000  SX51
+218  1982-01-01  2023-04-30                                                   Maximum soil temperature with sod cover at 10 cm depth        1.0000  SX52
+219  1982-01-01  2023-04-30                                                   Maximum soil temperature with sod cover at 20 cm depth        1.0000  SX53
+220  2002-03-01  2023-03-31                                                  Maximum soil temperature with sod cover at 100 cm depth        1.0000  SX55
+221  2012-09-27  2023-03-31                                                  Maximum soil temperature with sod cover at 150 cm depth        1.0000  SX56
+222  1763-01-01  2023-05-26                                                                                     Average Temperature.        1.0000  TAVG
+223  1926-03-17  2023-04-25                                                                                Thickness of ice on water        1.0000  THIC
+224  1763-01-01  2023-05-26                                                                                      Maximum temperature        1.0000  TMAX
+225  1763-01-01  2023-05-26                                                                                      Minimum temperature        1.0000  TMIN
+226  1876-11-27  2023-05-26                                                                   Temperature at the time of observation        1.0000  TOBS
+227  1994-05-20  2023-05-26                                                                                   TDWR Base Reflectivity        0.9500   TR0
+228  1994-05-20  2023-05-26                                                                                   TDWR Base Reflectivity        0.9500   TR1
+229  1994-05-20  2023-05-26                                                                                   TDWR Base Reflectivity        0.9500   TR2
+230  1965-01-01  2023-04-06                                                                            Total sunshine for the period        1.0000  TSUN
+231  1994-05-20  2023-05-26                                                               TDWR Base Velocity (first elevation angle)        0.9500   TV0
+232  1994-05-20  2023-05-26                                                              TDWR Base Velocity (second elevation angle)        0.9500   TV1
+233  1994-05-20  2023-05-26                                                               TDWR Base Velocity (third elevation angle)        0.9500   TV2
+234  1994-05-20  2023-05-26                                                   TDWR Short Range Base Reflectivity (88.9 KM) (ELEV. 1)        0.9500   TZ0
+235  1994-05-20  2023-05-26                                                   TDWR Short Range Base Reflectivity (88.9 KM) (ELEV. 2)        0.9500   TZ1
+236  1994-05-20  2023-05-26                                                   TDWR Short Range Base Reflectivity (88.9 KM) (ELEV. 3)        0.9500   TZ2
+237  1994-05-20  2023-05-26                                                       TDWR Long Range Base Reflectivity (0.6 elev angle)        0.9500   TZL
+238  1993-06-01  2023-05-24                                                                       Direction of fastest 2-minute wind        1.0000  WDF2
+239  1993-06-01  2023-05-24                                                                       Direction of fastest 5-second wind        1.0000  WDF5
+240  1948-01-01  2023-05-25                                                                              Direction of peak wind gust        1.0000  WDFG
+241  1859-10-01  2023-04-30                                                                                      Total wind movement        1.0000  WDMV
+242  1952-07-01  2023-05-26                                                                   Water equivalent of snow on the ground        1.0000  WESD
+243  1998-06-01  2023-05-26                                                                             Water equivalent of snowfall        1.0000  WESF
+244  1993-06-01  2023-05-24                                                                              Fastest 2-minute wind speed        1.0000  WSF2
+245  1993-06-01  2023-05-24                                                                              Fastest 5-second wind speed        1.0000  WSF5
+246  1948-01-01  2023-05-25                                                                                     Peak gust wind speed        1.0000  WSFG
+247  1965-01-01  2023-05-25                                                                         Highest instantaneous wind speed        1.0000  WSFI
+248  1851-05-19  2023-05-24                                                    Fog, ice fog, or freezing fog (may include heavy fog)        1.0000  WT01
+249  1900-12-23  2023-05-24                                    Heavy fog or heaving freezing fog (not always distinguished from fog)        1.0000  WT02
+250  1851-04-02  2023-05-24                                                                                                  Thunder        1.0000  WT03
+251  1852-02-20  2023-05-03                                                        Ice pellets, sleet, snow pellets, or small hail"         1.0000  WT04
+252  1851-04-13  2023-05-24                                                                            Hail (may include small hail)        1.0000  WT05
+253  1890-03-28  2023-05-02                                                                                           Glaze or rime         1.0000  WT06
+254  1891-12-21  2023-05-21                                   Dust, volcanic ash, blowing dust, blowing sand, or blowing obstruction        1.0000  WT07
+255  1851-04-11  2023-05-24                                                                                           Smoke or haze         1.0000  WT08
+256  1852-02-12  2023-05-02                                                                                 Blowing or drifting snow        1.0000  WT09
+257  1886-03-20  2023-05-04                                                                   Tornado, waterspout, or funnel cloud"         1.0000  WT10
+258  1851-04-03  2023-04-30                                                                                   High or damaging winds        1.0000  WT11
