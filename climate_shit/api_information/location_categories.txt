@@ -1,0 +1,13 @@
+                          name        id
+0                         City      CITY
+1             Climate Division  CLIM_DIV
+2               Climate Region  CLIM_REG
+3                      Country     CNTRY
+4                       County      CNTY
+5   Hydrologic Accounting Unit   HYD_ACC
+6   Hydrologic Cataloging Unit   HYD_CAT
+7            Hydrologic Region   HYD_REG
+8         Hydrologic Subregion   HYD_SUB
+9                        State        ST
+10                US Territory   US_TERR
+11                    Zip Code       ZIP
