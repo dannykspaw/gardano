@@ -14,14 +14,13 @@ response = requests.get(url, headers={})
 token = "HGecygnRwvZitOoPhfCpuQmMgMhsnZhF"
 
 #make the api call
-r = requests.get("https://www.ncei.noaa.gov/cdo-web/api/v2/locations?locationcategoryid=CITY&sortfield=name&sortorder=desc", headers={'token':token})
+r = requests.get("https://www.ncei.noaa.gov/cdo-web/api/v2/stations", headers={'token':token})
 
 #load the api response as a json
 d = json.loads(r.text)
-print(d['results'])
+print(d)
 #get city names and station names
-dataframe = pd.json_normalize(d['results'])
-print(dataframe)
-
-stations_df = pd.DataFrame()
-stations_df['name'] = dataframe['name']
+stations_df = pd.json_normalize(d['metadata'])
+stations_df = stations_df[stations_df['name'].str.contains("Austin, TX")].sort_values('name', ascending=0)
+austin_id = stations_df['id']
+print(austin_id)

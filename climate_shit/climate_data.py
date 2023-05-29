@@ -20,7 +20,7 @@ prcp = []
 year = "2023"
 
 #make the api call
-r = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&limit=1000&stationid=GHCND:USW00023129&startdate='+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
+r = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&limit=1000&stationid=CITY:US480005&startdate='+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
 
 #load the api response as a json
 d = json.loads(r.text)
