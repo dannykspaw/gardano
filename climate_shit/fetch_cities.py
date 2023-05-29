@@ -20,20 +20,8 @@ r = requests.get("https://www.ncei.noaa.gov/cdo-web/api/v2/locations?locationcat
 d = json.loads(r.text)
 print(d['results'])
 #get city names and station names
-for x in range(10):
-    name = [item for item in d['results']['name']]
-    station_id = [item for item in d['results']['id']]
-    print(name)
-    print(station_id)
+dataframe = pd.json_normalize(d['results'])
+print(dataframe)
 
-#initialize dataframe
 stations_df = pd.DataFrame()
-
-stations_df['name'] = name
-stations_df['station_id'] = station_id
-
-print(stations_df)
-
-# print(df_temp)
-# df_temp.plot('date','avgTemp')
-# plt.show()
+stations_df['name'] = dataframe['name']
