@@ -1,4 +1,5 @@
 use std::process::Command;
+use std::{thread, time};
 
 fn main() {
     let repo_path = "";
@@ -10,5 +11,9 @@ fn main() {
     Command::new("git").arg("commit").arg("-m").arg(commit_message).status().unwrap();
 
     Command::new("git").arg("push").status().unwrap();
+}
+
+fn update_git() {
+
 }
 
