@@ -14,13 +14,22 @@ response = requests.get(url, headers={})
 token = "HGecygnRwvZitOoPhfCpuQmMgMhsnZhF"
 
 #make the api call
-r = requests.get("https://www.ncei.noaa.gov/cdo-web/api/v2/stations", headers={'token':token})
 
-#load the api response as a json
-d = json.loads(r.text)
-print(d)
 #get city names and station names
-stations_df = pd.json_normalize(d['metadata'])
-stations_df = stations_df[stations_df['name'].str.contains("Austin, TX")].sort_values('name', ascending=0)
-austin_id = stations_df['id']
-print(austin_id)
+
+stations_total = pd.DataFrame()
+stations_df = pd.DataFrame()
+x = 0
+while x < 20000:
+    r = requests.get('https://www.ncei.noaa.gov/cdo-web/api/v2/stations?offset={}&limit=1000'.format(x), headers={'token':token})
+    d = json.loads(r.text)
+    stations_df = pd.json_normalize(d['results'])
+    stations_total = pd.concat([stations_total, stations_df])
+    print(stations_total.tail())
+    print(x)
+    x = x + 1000
+
+stations_total.to_csv('api_information/city_data.csv')
+
+print(stations_total)
+

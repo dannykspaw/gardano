@@ -20,7 +20,7 @@ location_id = "CITY:US480005"
 #make the api call, sort of overkill calling three times at once---will readjust
 avg_temps_for_city = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&limit=1000&locationid={}&startdate='.format(location_id)+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
 avg_precipitation = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&limit=1000&locationid={}&startdate='.format(location_id)+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
-avg_sunshine = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PSUN&limit=1000&locationid={}&startdate='.format(location_id)+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
+avg_sunshine = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TSUN&limit=1000&locationid={}&startdate='.format(location_id)+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
 
 available_datatypes = requests.get('https://www.ncei.noaa.gov/cdo-web/api/v2/datatypes?startdate='+year+'01-01'+'&limit=1000', headers={'token':token})
 
@@ -35,7 +35,7 @@ web_response_df = web_response_df.to_string()
 print(web_response_df)
 
 #basically just built a conditional statement to do the logic I am supposed to do here (i.e. get temp data)
-if r == web_response_df:
+if r == avg_temps_for_city:
     avg_temps = [item for item in d['results'] if item['datatype']=='TAVG']
     #get the date field from all average temperature readings
     dates_temp = [item['date'] for item in avg_temps]
