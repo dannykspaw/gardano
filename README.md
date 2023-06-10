@@ -1,5 +1,5 @@
 # thematrix
-
+Project description to go here
 
 # To Do List
 - [x] Handle try/except errors
