@@ -25,7 +25,7 @@ avg_sunshine = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datas
 available_datatypes = requests.get('https://www.ncei.noaa.gov/cdo-web/api/v2/datatypes?startdate='+year+'01-01'+'&limit=1000', headers={'token':token})
 
 #modify r based on whatever variables need above, I put a few above out of curiousity to see what they have to offer
-r = avg_sunshine
+r = avg_precipitation
 
 #load the api response as a json then convert it to pandas DF
 d = json.loads(r.text)
