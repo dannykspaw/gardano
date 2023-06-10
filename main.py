@@ -11,11 +11,11 @@ Description:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                  IMPORTS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import climate_shit.random_function as rf
+#import climate_shit.random_function as rf
+import utils
 
-x = rf.a_function()
 
-print(x)
+utils.get_time()
 
 
 
