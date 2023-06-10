@@ -1,0 +1,6 @@
+adafruit_seesaw==1.0
+board==1.0
+matplotlib==3.6.2
+numpy==1.24.1
+pandas==2.0.1
+Requests==2.31.0
