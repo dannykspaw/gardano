@@ -1,7 +1,8 @@
-# thematrix :space_invader: :alien: :robot:
-Project description to go here
+# :seedling: gardano :seedling:
 
-# To Do List
+## :cactus: Project Description: :cactus:
+
+## To Do List
 - [ ] Handle try/except errors :smiling_imp:
 - [ ] Read in data points from API
 - [ ] Create csv log file with data points of interest:
