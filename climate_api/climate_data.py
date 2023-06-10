@@ -8,9 +8,6 @@ import matplotlib.pyplot as plt
 # Specify the URL of the token request page
 url = "https://www.ncei.noaa.gov/cdo-web/api/v2/datasets"
 
-# Get the token request form
-response = requests.get(url, headers={})
-
 token = "HGecygnRwvZitOoPhfCpuQmMgMhsnZhF"
 temps = []
 prcp = []
