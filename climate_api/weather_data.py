@@ -5,28 +5,74 @@ import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-# Specify the URL of the token request page
 
-# Set the latitude and longitude coordinates for your desired location
-latitude = 30.2672
-longitude = -97.7431
+class WeatherData:
+    """
+    The following WeatherData class allows users to specify a latitude and 
+    longitude in order to retrieve location, and weather data.
+    This program uses the NOAA National Weather Service API.
+    """
+    def __init__(self, latitude, longitude):
+        # Retrieve the grid endpoint using the /points endpoint
+        # Specify the URL of the token request page
+        points_url = f"https://api.weather.gov/points/{latitude},{longitude}"
+        response = requests.get(points_url)
+        if response.status_code == 200:
+            data = response.json()
+            formatted_data = json.dumps(data, indent=4)
+            city = data['properties']['relativeLocation']['properties']['city']
+            state = data['properties']['relativeLocation']['properties']['state']
+            self.location = city+', '+state
+            self.weather_url = data['properties']['forecastHourly']
+        else:
+            print("Points request failed with status code:", response.status_code)
+            self.location = None
+            self.weather_url = None
 
-# Retrieve the grid endpoint using the /points endpoint
-points_url = f"https://api.weather.gov/points/{latitude},{longitude}"
-response = requests.get(points_url)
+        self.latitude = latitude
+        self.longitude = longitude
 
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    data = response.json()
-    forecast_url = data["properties"]["forecast"]
-    # Retrieve the forecast data using the grid endpoint
-    forecast_response = requests.get(forecast_url)
-#    print(forecast_response)
-    if forecast_response.status_code == 200:
-        forecast_data = forecast_response.json()
-        print(forecast_data)
-        # Parse the forecast data and extract the desired weather information
-    else:
-        print("Forecast request failed with status code:", forecast_response.status_code)
-else:
-    print("Points request failed with status code:", response.status_code)
+    def get_weather(self):
+        response = requests.get(self.weather_url)
+        # Check if the request was successful (status code 200)
+        if response.status_code == 200:
+            data = response.json()
+            formatted_data = json.dumps(data, indent=4)
+            print(formatted_data)
+            temp = data['properties']['periods'][0]['temperature']
+            dewpoint = data['properties']['periods'][0]['dewpoint']['value']
+            rh = data['properties']['periods'][0]['relativeHumidity']['value']
+            return temp, dewpoint, rh
+        else:
+            print("Points request failed with status code:", response.status_code)
+            return None, None, None
+
+    def get_temp(self):
+        response = requests.get(self.weather_url)
+        # Check if the request was successful (status code 200)
+        if response.status_code == 200:
+            data = response.json()
+            formatted_data = json.dumps(data, indent=4)
+            temp = data['properties']['periods'][0]['temperature']
+            return temp
+        else:
+            print("Points request failed with status code:", response.status_code)
+            return None
+         
+            
+
+if __name__ == "__main__":
+    
+    # EXAMPLE
+    # Set the latitude and longitude coordinates for your desired location
+    latitude = 30.2672
+    longitude = -97.7431
+    
+    weather = WeatherData(latitude, longitude)
+    location = weather.location
+    weather_data = weather.get_weather()
+
+    temp = weather_data[0]
+
+    print(temp)
+
