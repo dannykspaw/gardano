@@ -10,12 +10,23 @@ Description:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                  IMPORTS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import os
 import csv
 import datetime
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                 FUNCTIONS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+def file_setup(file_name, location, headers):
+    if not os.path.isfile(os.getcwd()+'/'+file_name):
+        print(f"Adding new file: {file_name}\n")
+        write_data(["gardano Weather Data:"], file_name)
+        write_data(["Location:", location], file_name)
+        write_data([""], file_name)
+        write_data(headers, file_name)
+    else:
+        print("Log File exists. Appending to existing file.")
 
 def write_data(data, file_name):
     with open(file_name, 'a', newline='') as file_data:

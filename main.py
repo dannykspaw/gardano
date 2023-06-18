@@ -11,11 +11,21 @@ Description:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                  IMPORTS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#import climate_shit.random_function as rf
 import utils
+import datetime 
+from climate_api.weather_data import WeatherData
+# import sensor_programs.rpiFunctions
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+latitude = 30.267
+longitude = -97.743
+austin_weather = WeatherData(latitude, longitude)
+file_name = "gardano_log.csv"
+headers = ["Timestamp", "Local Temp", "Local Dew Point", "Local RH", "Status"]
 try:
-    pass
+    utils.file_setup(file_name, austin_weather.location, headers)
+    
+    
 except KeyboardInterrupt:
     print("\nProgram terminated as requested.")
 
@@ -23,7 +33,7 @@ except Exception as e:
     print("\nAn unkown error occured at {}:{}. Program terminated.".format(datetime.now().hour, datetime.now().minute))
     print(e)
 
-utils.get_time()
+print(utils.get_time())
 
 
 

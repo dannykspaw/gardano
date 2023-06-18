@@ -37,12 +37,11 @@ class WeatherData:
         # Check if the request was successful (status code 200)
         if response.status_code == 200:
             data = response.json()
-            formatted_data = json.dumps(data, indent=4)
-            print(formatted_data)
+            formatted_data = json.dumps(data, indent=4) # only used for viewing
             temp = data['properties']['periods'][0]['temperature']
-            dewpoint = data['properties']['periods'][0]['dewpoint']['value']
+            dewpoint = data['properties']['periods'][0]['dewpoint']['value']*1.8 + 32
             rh = data['properties']['periods'][0]['relativeHumidity']['value']
-            return temp, dewpoint, rh
+            return temp, round(dewpoint,1), rh
         else:
             print("Points request failed with status code:", response.status_code)
             return None, None, None
@@ -73,6 +72,15 @@ if __name__ == "__main__":
     weather_data = weather.get_weather()
 
     temp = weather_data[0]
-
     print(temp)
+
+    lat = input("User input latitude:\n")
+    long = input("User input longitude:\n")
+
+    random_weather = WeatherData(lat, long)
+    random_location = random_weather.location
+    random_temp = random_weather.get_weather()[0]
+    print(f"""
+    The specified location is: {random_location}
+    Temperature: {random_temp}""")
 

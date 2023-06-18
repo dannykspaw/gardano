@@ -8,7 +8,7 @@ used to drive the ag industry into the future of crop production.
 - [x] Read in data points from API
 - [x] Create functions for handling sensor inputs
 - [x] Create functions for handling signal outputs (pumps)
-- [ ] Create csv log file with data points of interest:
+- [x] Create csv log file with data points of interest:
     - Timestamp
     - Region
     - Temperature (dry bulb)
