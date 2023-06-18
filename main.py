@@ -12,26 +12,34 @@ Description:
 #                                  IMPORTS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import utils
-import datetime 
+import time
+from datetime import datetime
 from climate_api.weather_data import WeatherData
 # import sensor_programs.rpiFunctions
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-latitude = 30.267
-longitude = -97.743
+latitude = 30.2672
+longitude = -97.7431
 austin_weather = WeatherData(latitude, longitude)
 file_name = "gardano_log.csv"
 headers = ["Timestamp", "Local Temp", "Local Dew Point", "Local RH", "Status"]
 try:
     utils.file_setup(file_name, austin_weather.location, headers)
-    
+    while True:
+        timestamp = str(utils.get_time())
+        data = list(austin_weather.get_weather())
+        data.insert(0, timestamp)
+        print(data)
+        utils.write_data(data, file_name)
+        time.sleep(60)
     
 except KeyboardInterrupt:
     print("\nProgram terminated as requested.")
 
 except Exception as e:
-    print("\nAn unkown error occured at {}:{}. Program terminated.".format(datetime.now().hour, datetime.now().minute))
+    error = ["An unkown error occured at {}:{}. Program terminated.".format(datetime.now().hour, datetime.now().minute)]
     print(e)
+    utils.write_data(error, file_name)
 
 print(utils.get_time())
 
