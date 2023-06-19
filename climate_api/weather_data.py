@@ -41,7 +41,7 @@ class WeatherData:
             temp = data['properties']['periods'][0]['temperature']
             dewpoint = data['properties']['periods'][0]['dewpoint']['value']*1.8 + 32
             rh = data['properties']['periods'][0]['relativeHumidity']['value']
-            return temp, round(dewpoint,1), rh
+            return list([temp, round(dewpoint,1), rh])
         else:
             print("Points request failed with status code:", response.status_code)
             return None, None, None
@@ -69,6 +69,7 @@ if __name__ == "__main__":
     
     weather = WeatherData(latitude, longitude)
     location = weather.location
+
     weather_data = weather.get_weather()
 
     temp = weather_data[0]

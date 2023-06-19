@@ -19,10 +19,13 @@ avg_temps_for_city = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data
 avg_precipitation = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&limit=1000&locationid={}&startdate='.format(location_id)+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
 avg_sunshine = requests.get('https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TSUN&limit=1000&locationid={}&startdate='.format(location_id)+year+'-01-01&enddate='+year+'-12-31', headers={'token':token})
 
-available_datatypes = requests.get('https://www.ncei.noaa.gov/cdo-web/api/v2/datatypes?startdate='+year+'01-01'+'&limit=1000', headers={'token':token})
+available_datatypes = requests.get('https://api.weather.gov/points/30.2672,97.7431')
+
+# /observations/2023-06-12T17:42:13Z/hourly
 
 #modify r based on whatever variables need above, I put a few above out of curiousity to see what they have to offer
-r = avg_precipitation
+r = available_datatypes
+print(r)
 
 #load the api response as a json then convert it to pandas DF
 d = json.loads(r.text)
