@@ -4,7 +4,7 @@
 gardano is a revolutionary, opensource, data driven, automation solution
 used to drive the ag industry into the future of crop production.
 ## To Do List
-- [] DKS to undo a shit ton of redundant code he just wrote on 6/18 :smiling_imp:
+- [ ] DKS to undo a shit ton of redundant code he just wrote on 6/18 :smiling_imp:
 - [x] Handle try/except errors :smiling_imp:
 - [x] Read in data points from API
 - [x] Create functions for handling sensor inputs
