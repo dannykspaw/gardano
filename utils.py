@@ -19,7 +19,7 @@ import datetime
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 def file_setup(file_name, location, headers):
-    if not os.path.isfile(os.getcwd()+'/'+file_name):
+    if not os.path.isfile(file_name):
         print(f"Adding new file: {file_name}\n")
         write_data(["gardano Weather Data:"], file_name)
         write_data(["Location:", location], file_name)
