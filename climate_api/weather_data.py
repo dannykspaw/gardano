@@ -1,9 +1,7 @@
 import requests
-import pandas as pd
 import json
 import numpy as np
 from datetime import datetime
-import matplotlib.pyplot as plt
 
 
 class WeatherData:
