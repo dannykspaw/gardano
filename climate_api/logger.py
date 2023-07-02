@@ -19,6 +19,6 @@ weather_info = {
 
 weather_info_store = pd.DataFrame.from_dict(weather_info)
 
-# weather_info_store.to_csv('')
+weather_info_store.to_csv('../data_aggregation/ambient_data.csv', index=False)
 
 
